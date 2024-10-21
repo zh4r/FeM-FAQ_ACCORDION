@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'Work Sans';
+    src: url(./assets/fonts/WorkSans-VariableFont_wght.ttf);
+    font-size: 16px;
+    /* 400, 600, 700 */
+}
+
+/* 
+- White: hsl(0, 0%, 100%)
+- Light pink: hsl(275, 100%, 97%)
+- Grayish purple: hsl(292, 16%, 49%)
+- Dark purple: hsl(292, 42%, 14%) 
+*/
+
+/* 
+- Mobile: 375px
+- Desktop: 1440px
+ */
+
+body {
+    font-family: 'Work Sans';
+    background-color: hsl(275, 100%, 97%);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    padding-top: 1.4rem;
+    margin-left: 1rem;
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    max-width: 70%;
+    /* margin-top: 0; */
+}
+
+section {
+    margin: 1.5rem;
+}
+
+p {
+    font-size: .9rem;
+    padding-bottom: 2rem;
+    padding-right: .1rem;
+    line-height: 1.3rem;
+    color: hsl(292, 16%, 49%);
+    width: 93%;
+}
+
+.accordionBtn {
+    font-family: 'Work Sans';
+    width: 95%;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255,255,255,0);
+    border-style: none;
+}
+
+.banner {
+    position: absolute;
+    z-index: -1;
+}
+
+.starImg {
+    max-height: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+.plusImg {
+    max-height: 2rem;
+    padding: 0;
+    margin: 0;
+}
+/* 
+.header {
+    justify-content: center;
+} */
+
+.card {
+    border-radius: .5rem;
+    background-color: hsl(0, 0%, 100%);
+    max-width: 355px;
+    margin: 1rem;
+}
+
+
+
+.inlineB {
+    display: inline-block;
+}
+.accordionBtn {
+    display: flex;
+    /* border: 1px solid black; */
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.right {
+    display: flex;
+    margin: auto;
+    margin-right: 0;
+}
+
+.head {
+    margin-bottom: 0;
+}
