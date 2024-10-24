@@ -17,6 +17,11 @@
 - Desktop: 1440px
  */
 
+html {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Work Sans';
     background-color: hsl(275, 100%, 97%);
@@ -36,16 +41,25 @@ h2 {
     font-size: 1rem;
     font-weight: 600;
     max-width: 70%;
-    /* margin-top: 0; */
+}
+
+hr {
+    width: 93%;
+    margin-left: 0;
+    border: solid .1rem hsla(293, 16%, 49%, 0.11);
 }
 
 section {
-    margin: 1.5rem;
+    margin: 1.2rem .3rem 1.5rem 1.5rem;
+}
+
+section:last-of-type {
+    padding-bottom: 1rem;
 }
 
 p {
     font-size: .9rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     padding-right: .1rem;
     line-height: 1.3rem;
     color: hsl(292, 16%, 49%);
@@ -57,13 +71,34 @@ p {
     width: 95%;
     margin: 0;
     padding: 0;
-    background-color: rgba(255,255,255,0);
-    border-style: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.active,
+.accordionBtn:hover {
+    color: hsl(290, 100%, 42%);
+    text-shadow: 1px 0px 18px rgba(26, 26, 26, 0.11);
+}
+
+.accordion:after {
+    font-size: 13px;
+    float: right;
+    margin-left: 5px;
+}
+
+.panel {
+    display: none;
+    overflow: hidden;
 }
 
 .banner {
-    position: absolute;
+    position: fixed;
+    top: 0;
     z-index: -1;
+    width: 100%;
 }
 
 .starImg {
@@ -77,35 +112,22 @@ p {
     padding: 0;
     margin: 0;
 }
-/* 
-.header {
-    justify-content: center;
-} */
 
 .card {
     border-radius: .5rem;
     background-color: hsl(0, 0%, 100%);
-    max-width: 355px;
-    margin: 1rem;
+    max-width: 88%;
+    margin: auto;
 }
-
-
 
 .inlineB {
     display: inline-block;
 }
-.accordionBtn {
-    display: flex;
-    /* border: 1px solid black; */
-    align-items: center;
-    margin: 0;
-    padding: 0;
-}
 
 .right {
     display: flex;
-    margin: auto;
-    margin-right: 0;
+    margin: auto 0 auto auto;
+
 }
 
 .head {
