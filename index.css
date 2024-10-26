@@ -13,6 +13,7 @@
 html {
     font-family: 'Work Sans';
     background-color: hsl(275, 100%, 97%);
+    color: hsl(292, 42%, 14%);
 }
 
 body {
@@ -29,7 +30,6 @@ h1 {
     font-size: 1.7rem;
     font-weight: 700;
     margin: .5rem 0 0 1.1rem;
-    color: hsl(292, 42%, 14%);
 }
 
 h2 {
@@ -61,7 +61,7 @@ section:last-of-type {
     padding-bottom: .5rem;
 }
 
-.banner {
+#banner {
     position: fixed;
     top: 0;
     left: 0;
@@ -69,7 +69,7 @@ section:last-of-type {
     width: 100vw;
 }
 
-.card {
+#card {
     border-radius: .5rem;
     background-color: hsl(0, 0%, 100%);
     max-width: 290px;
@@ -77,12 +77,13 @@ section:last-of-type {
     transition: box-shadow .5s ease-in;
 }
 
-.card:hover {
+#card:hover {
     box-shadow: rgba(105, 105, 105, 0.483) 4px 4px 35px;
     transition: box-shadow .5s ease-in;
 }
 
 .accordionBtn {
+    background-color: rgba(0, 0, 0, 0);
     display: flex;
     width: 95%;
     margin: 0;
@@ -90,7 +91,6 @@ section:last-of-type {
     border: none;
     cursor: pointer;
     align-items: center;
-    color: hsl(292, 42%, 14%);
 }
 
 .accordionBtn:hover {
@@ -98,17 +98,28 @@ section:last-of-type {
     text-shadow: 1px 0px 18px rgba(26, 26, 26, 0.11);
 }
 
-.panel {
+.answer {
     max-height: 0;
     overflow: hidden;
     transition: max-height .5s ease;
 }
 
 .opened {
-    max-height: 200px;
+    max-height: 11rem;
     overflow-y: scroll;
     overflow-x: hidden;
 }
+
+.plusMinusImg {
+    max-height: 1.8rem;
+    display: flex;
+    margin: auto 0 auto auto;
+}
+
+.starImg {
+    max-height: 1.4rem;
+}
+
 
 ::-webkit-scrollbar {
     width: .2rem;
@@ -126,22 +137,9 @@ section:last-of-type {
     background: hsl(277, 89%, 89%);
 }
 
-.starImg {
-    max-height: 1.4rem;
-}
-
-.plusMinusImg {
-    max-height: 1.8rem;
-}
-
-.right {
-    display: flex;
-    margin: auto 0 auto auto;
-}
-
 
 @media (min-width: 520px) {
-    .card {
+    #card {
         min-width: 510px;
         max-width: 30vw;
         border-radius: .7rem;
@@ -168,7 +166,7 @@ section:last-of-type {
         padding-bottom: 1rem;
     }
 
-    .head {
+    #head {
         margin-top: 2.2rem;
         margin-bottom: 1.6rem;
     }
@@ -179,7 +177,7 @@ section:last-of-type {
 }
 
 @media (min-width: 1100px) {
-    .banner {
+    #banner {
         content: url(./assets/images/background-pattern-desktop.svg);
     }
 }
